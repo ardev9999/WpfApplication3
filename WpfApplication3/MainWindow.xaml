@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApplication3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid Margin="0,0,0,149">
+        <WrapPanel Orientation="Horizontal" >
+            <WrapPanel Orientation="Vertical">
+                <Label Content="Vivien csodálatos ^^" Width="121" />
+                <Label Content="És nagyon jófej!" />
+            </WrapPanel>
+            <WrapPanel Orientation="Vertical">
+                <ComboBox Width="120" SelectionChanged="ComboBox_SelectionChanged" Height="26">
+                    <ComboBoxItem>Igen</ComboBoxItem>
+                    <ComboBoxItem>Persze</ComboBoxItem>
+                </ComboBox>
+                <DatePicker Height="26"></DatePicker>
+            </WrapPanel>
+        </WrapPanel>
+        <ProgressBar Value="75" Width="400" Margin="60,70,57,73" RenderTransformOrigin="0.499,-2.272" HorizontalAlignment="Center" />
+    </Grid>
+</Window>
